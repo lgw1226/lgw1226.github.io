@@ -35,6 +35,6 @@ export const template = {
 
 export const seo = {
 	default_title: 'Gawon Lee',
-	default_description: 'Gawon Lee\'s personal website. PhD student at SNU studying reinforcement learning.',
+	default_description: 'PhD Candidate in Reinforcement Learning',
 	default_image: '/seo.png',
 }
