@@ -11,6 +11,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
-    site: template.website_url,
-    base: template.base,
+    site: "https://lgw1226.github.io",
 });
