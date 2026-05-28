@@ -45,16 +45,16 @@ export const experiences = [
 
 export const education = [
 	{
-		"school": "Seoul National University",
-		"time": "Mar. 2016 – Oct. 2020",
-		"degree": "Bachelor of Mechanical Engineering",
+		"school": "Lab for Autonomous Robotics Research, SNU",
+		"time": "Mar. 2023 – Present",
+		"degree": "PhD Candidate in Aerospace Engineering",
 		"location": "Seoul, South Korea",
 		"description": ""
 	},
 	{
-		"school": "Lab for Autonomous Robotics Research, SNU",
-		"time": "Mar. 2023 – Present",
-		"degree": "PhD Candidate in Aerospace Engineering",
+		"school": "Seoul National University",
+		"time": "Mar. 2016 – Oct. 2020",
+		"degree": "Bachelor of Mechanical Engineering",
 		"location": "Seoul, South Korea",
 		"description": ""
 	}

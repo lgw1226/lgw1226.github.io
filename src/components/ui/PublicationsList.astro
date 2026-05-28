@@ -5,9 +5,10 @@ import { highlightAuthor } from '@/lib/utils'
 
 interface Props {
 	elements: (Skill | Publication)[]
+	showAbstract?: boolean
 }
 
-const { elements } = Astro.props
+const { elements, showAbstract = true } = Astro.props
 ---
 <ul class='space-y-8'>
   {elements.map((element, index) => (
@@ -34,7 +35,7 @@ const { elements } = Astro.props
         <span class='italic'>{element.journal}</span> •{' '}
         {element.time}
       </p>
-      <p>{element.abstract}</p>
+      {showAbstract && <p>{element.abstract}</p>}
       </>
     }
     {/* Uncomment this line to add a small border bottom for each element
