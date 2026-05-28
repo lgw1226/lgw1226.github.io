@@ -1,29 +1,33 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from "astro:assets";
 
-import SocialIcons from './SocialIcons.astro'
+import SocialIcons from "./SocialIcons.astro";
 
-
-const {fullName, title, institute, profilePicture} = Astro.props
+const { fullName, title, institute, profilePicture } = Astro.props;
 ---
-<div class='flex-1'>
-  <h1 class='text-4xl font-bold mb-4'>
-    Welcome! I'm <span class='text-secondary'>{fullName}</span>
+
+<div class="flex-1">
+  <h1 class="text-4xl font-bold mb-4">
+    <span class="text-green-700">{fullName}</span>
   </h1>
-  <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
-  <p class='text-lg mb-6'>
-    Brief impactful description of your research focus and academic mission.
-    Highlight your key contributions and areas of expertise.
+  <p class="text-xl text-gray-600 mb-4">
+    {title}{institute ? ` at ${institute}` : ""}
   </p>
-  <div class='flex gap-4'>
+  <p class="text-lg mb-6">
+    I want to bridge the gap between high-level decision-making and complex
+    physical control by developing sample-efficient, scalable learning
+    frameworks. My academic mission is to pioneer autonomous robotic systems
+    that can generalize across diverse, real-world tasks.
+  </p>
+  <div class="flex gap-4">
     <SocialIcons />
   </div>
 </div>
-<div class='size-72 lg:block hidden'>
+<div class="size-72 lg:block hidden">
   <!-- Add your profile image -->
   <Image
     src={profilePicture}
     alt={fullName}
-    class='w-full h-full mask mask-circle size-44'
+    class="w-full h-full mask mask-circle size-44"
   />
 </div>

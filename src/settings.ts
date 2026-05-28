@@ -1,40 +1,40 @@
 export const profile = {
-	fullName: 'Your Name',
-	title: '',
-	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	fullName: 'Gawon Lee',
+	title: 'PhD Candidate',
+	institute: 'SNU',
+	author_name: 'Gawon Lee', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{ title: 'Reinforcement Learning', description: 'Goal-Conditioned RL, Multi-Task RL, RL Fine-Tuning VLA Models', field: 'engineering' },
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
+	email: 'lgw1997@snu.ac.kr',
 	linkedin: '',
-	x: 'https://www.x.com/',
+	x: '',
 	bluesky: '',
-	github: '',
+	github: 'https://github.com/lgw1226',
 	gitlab: '',
-	scholar: '',
+	scholar: 'https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AIqSsVut5qRWaMD5IF7NOcAaEXvCy2FzMnhn1e0-PyklQrO8FXumJkvo_UMXDdLgaKJikwj6Y1oqP7ygAtBdSAqS0J3N&user=ABysT4sAAAAJ',
 	inspire: '',
 	arxiv: '',
 	orcid: '',
 }
 
 export const template = {
-	website_url: 'https://localhost:4321', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
+	website_url: 'https://lgw1226.github.io', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
 	lightTheme: 'light', // Select one of the Daisy UI Themes or create your own
 	darkTheme: 'dark', // Select one of the Daisy UI Themes or create your own
 	excerptLength: 200,
 	postPerPage: 5,
-    base: '' // Repository name starting with /
+	base: '' // Repository name starting with /
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
-	default_image: '/images/astro-academia.png',
+	default_title: 'Gawon Lee',
+	default_description: 'Gawon Lee\'s personal website. PhD student at SNU studying reinforcement learning.',
+	default_image: '/seo.png',
 }
